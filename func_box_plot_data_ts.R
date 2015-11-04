@@ -41,11 +41,24 @@ box_plot_data_ts <- function(x,xtyp="days"){
     x}
   
   if(xtyp=="weekdays") {    
-    x<-data.frame(weekday=weekdays(as.POSIXct(index(x)),abbreviate=FALSE),time=format(round(index(x),"hours"),format="%H:%M:%S"),coredata(x))
+    x<-data.frame(weekday=weekdays(as.POSIXct(index(x)),abbreviate=FALSE),
+                  time=format(round(index(x),"hours"),format="%H:%M:%S"),
+                  coredata(x))
+    
     colnames(x)[3]<-'value'
     x<-boxplot(value~paste(weekday,"-",time,sep=""),data=x,plot=FALSE)
-    weekdays <- c(rep("1-Monday",12),rep("2-Tuesday",12),rep("3-Wednesday",12),rep("4-Thursday",12),rep("5-Friday",12),rep("6-Saturday",12),rep("7-Sunday",12))
-    time <- (paste(c(0:23),':',rep('00',23),':',rep('00',23),sep='')); time <- c(rep(time,7)) ;time <- as.POSIXct(time,format="%H:%M:%S")
+    
+    weekdays <- c(rep("1-Monday",12),
+                   rep("2-Tuesday",12),
+                   rep("3-Wednesday",12),
+                   rep("4-Thursday",12),
+                   rep("5-Friday",12),
+                   rep("6-Saturday",12),
+                   rep("7-Sunday",12))
+    
+    time <- (paste(c(0:23),':',rep('00',23),':',rep('00',23),sep=''))
+    time <- c(rep(time,7)) ;time <- as.POSIXct(time,format="%H:%M:%S")
+    
     x<-data.frame(weekdays=weekdays,time=time,stats=t(x$stats),n=x$n)}
   
   return(x)
