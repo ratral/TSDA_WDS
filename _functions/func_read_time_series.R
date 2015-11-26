@@ -1,8 +1,10 @@
 
 read_time_series <- function(data_file,
-                             date_format= "%H:%M:%S",
-                             time_format ="'%d.%m.%Y" , 
-                             time_zone,sep = ",",
+                             date_format = "%H:%M:%S",
+                             time_format = "%d.%m.%Y" , 
+                             time_zone   = Sys.timezone(),
+                             roundtyp = "01mins",
+                             sep = ",",
                              header = TRUE,...){
   ## Loading Packages
   require(zoo,chron)
@@ -20,6 +22,6 @@ read_time_series <- function(data_file,
                            value = data_serie[,3])
   
   data_serie <- read.zoo(data_serie)
-  data_serie <- round_time(data_serie)
+  data_serie <- round_time(data_serie , rtyp=roundtyp)
   
 }
