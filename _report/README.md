@@ -7,7 +7,7 @@ Just as it is important to conduct a good needs assessment, it is also essential
 2.	Each of the components in the report should be addressed.
 3.	It is a good idea to have the report reviewed by all internal team members before presenting it to your client.
 
-# ANALYSIS REPORT TEMPLATE 
+## ANALYSIS REPORT TEMPLATE 
 
 **Executive:**  This section presents an overview of the analysis findings in a format that allows decision makers to make important decisions effectively and efficiently
 
