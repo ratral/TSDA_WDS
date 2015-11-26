@@ -1,0 +1,25 @@
+---
+title: |
+       | Main Title
+       | Sub Title
+
+author: |
+        | Dr.-Ing. Raul Trujillo Alvarez
+        | co-author
+
+date: '`r Sys.Date()`'
+
+output:
+
+  pdf_document:
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    highlight: tango
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    documentclass: article
+    fontsize: 11pt
+---
+
