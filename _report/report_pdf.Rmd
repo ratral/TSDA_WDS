@@ -10,17 +10,19 @@ author: |
 date: '`r Sys.Date()`'
 
 output:
-
+output:
   pdf_document:
+    fig_caption: true
     fig_width: 7
     fig_height: 6
-    fig_caption: true
     highlight: tango
     number_sections: true
     toc: true
     toc_depth: 2
-    documentclass: article
-    fontsize: 11pt
+
+fontsize: 11pt
+documentclass: article
+classoption: oneside
 ---
 
 # Introduction
@@ -69,12 +71,12 @@ This report outlines the findings of [provide description of data analysis] data
 [Report other finding of the data analysis, as required.]
 
 # Discussion
-[Summarise findings outlined in subheadings above, focussing on:
+Summarise findings outlined in subheadings above, focussing on:
 - data quality and the effect this may have on drawing conclusions
 - spread
 - response effectiveness and efficiency and estimates of undetected spread
 - predictions.
-Discuss the implications of findings for the response effort and the need for further resource.]
+Discuss the implications of findings for the response effort and the need for further resource.
 
 # Recommendations
 [Summarise recommended actions for the response team arising out of the analysis.]
