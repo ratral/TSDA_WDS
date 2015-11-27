@@ -27,6 +27,12 @@ classoption: oneside
 # Introduction
 This report outlines the findings of [provide description of data analysis] data analysis that has been performed as part of the [name of response] response.
 
+The point of this document is to capture our understanding of the requirements, and how we plan to address them.
+
+This document is used to capture the agreement between we and our customer of what will be built. It is also intended to be a useful reference for your project team.
+
+Not all of the following sections will be relevant for every project. For example, not every project will have a user interface, or a database.
+
 ## Background
 
 Briefly give enough background so that a person outside your team reading this document would understand why this document exists and what it is used for.
