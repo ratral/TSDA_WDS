@@ -23,6 +23,8 @@ fontsize: 11pt
 documentclass: article
 classoption: oneside
 ---
+# Executive
+This section presents an overview of the analysis findings in a format that allows decision makers to make important decisions effectively and efficiently.
 
 # Introduction
 This report outlines the findings of [provide description of data analysis] data analysis that has been performed as part of the [name of response] response.
