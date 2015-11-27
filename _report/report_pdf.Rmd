@@ -10,7 +10,6 @@ author: |
 date: '`r Sys.Date()`'
 
 output:
-output:
   pdf_document:
     fig_caption: true
     fig_width: 7
