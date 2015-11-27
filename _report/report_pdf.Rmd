@@ -29,6 +29,8 @@ This section presents an overview of the analysis findings in a format that allo
 # Introduction
 This report outlines the findings of [provide description of data analysis] data analysis that has been performed as part of the [name of response] response.
 
+This section introduces the major sections of the report as well as the primary people involved in conducting the analysis and producing the report. The client is also clearly identified. 
+
 The point of this document is to capture our understanding of the requirements, and how we plan to address them.
 
 This document is used to capture the agreement between we and our customer of what will be built. It is also intended to be a useful reference for your project team.
