@@ -46,27 +46,6 @@ This report outlines the findings of [provide description of data analysis] data
 ## Quality of data
 [Describe the quality of the data used in the analysis.  Were there any issues with it that should be taken into consideration when looking at the findings?]
 
-## Rate of spread
-[Describe what the findings of the data analysis indicate regarding rate of spread of the risk organism spatially, temporally and by other relevant property or animal classes.  Use epidemic curve, estimated dissemination rate and generation interval.]
-
-## Old and new distributions
-[Describe old and new distributions of the risk organism spatially, temporally and according to other relevant property or animal classes, e.g. farm type, industry sectors, managed vs wild populations.  Use maps, kernel-smoothe and network analysis techniques, as appropriate.]
-
-## New hosts
-[Describe what the findings of the data analysis indicate regarding current and new hosts for the risk organism.]
-
-## New conveyors or vectors
-[Describe what the findings of the data analysis indicate regarding current and new conveyors or vectors for the risk organism.]
-
-## Response efficiency and effectiveness
-[Describe the progress of the response according to operational tasks: organism management, surveillance and movement control.]
-
-## Undetected spread
-[Assess surveillance methods and reliability for their detection of the organism.  Describe magnitude of potential undetected cases.]
-
-## Predicted spread
-[Describe spatial and temporal magnitude of predicted epidemic using appropriate models.]
-
 ## Other
 [Report other finding of the data analysis, as required.]
 
