@@ -37,8 +37,8 @@ Leak localising is an activity that identifies and prioritises the areas of leak
 
 Leakage control models can be generally classified into the following two main groups:
 
-(a) passive (reactive) leakage control and 
-(b) active leakage control.
+- passive (reactive) leakage control and 
+- active leakage control.
 
 ### Leakage Hydraulic
 
