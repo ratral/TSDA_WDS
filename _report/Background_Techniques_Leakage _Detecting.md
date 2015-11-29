@@ -3,7 +3,7 @@ output: pdf_document
 ---
 ## Techniques for Leakage detecting
 
-there are several techniques for detecting where leakage is occurring in distribution systems or transpot lines. These include
+there are several techniques for detecting where leakage is occurring in distribution systems or transpot lines. These include:
 
 - random or regular sounding surveys,
 - step-testing on an isolated branch pipeline or partial system,
