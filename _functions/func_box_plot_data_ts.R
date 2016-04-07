@@ -28,7 +28,7 @@ box_plot_data_ts <- function(x,xtyp="days"){
     x <- data.frame(time=format(round(index(x),"hours"),format="%H:%M:%S"),coredata(x))
     colnames(x)[2]<-'value'
     x <- boxplot(value~time,data=x,plot=FALSE)
-    x <- data.frame(time=as.POSIXct(x$name,format="%H:%M:%S"),stats=t(x$stats),n=x$n)
+    x <- data.frame(time=as.POSIXct(x$name,format="%H:%M:%S", tz = "Europe/London" ),stats=t(x$stats),n=x$n)
     colnames(x) <- c("time","min","quant.25","median","quant.75","max","records")
     x}
   
@@ -36,7 +36,7 @@ box_plot_data_ts <- function(x,xtyp="days"){
     x<-data.frame(time=format(round(index(x),"mins"),format="%H:%M:%S"),coredata(x))
     colnames(x)[2]<-'value'
     x <- boxplot(value~time,data=x,plot=FALSE)
-    x <- data.frame(time=as.POSIXct(x$name,format="%H:%M:%S"),stats=t(x$stats),n=x$n)
+    x <- data.frame(time=as.POSIXct(x$name,format="%H:%M:%S", tz = "Europe/London"),stats=t(x$stats),n=x$n)
     colnames(x) <- c("time","min","quant.25","median","quant.75","max","records")
     x}
   
@@ -48,7 +48,7 @@ box_plot_data_ts <- function(x,xtyp="days"){
     colnames(x)[3]<-'value'
     x<-boxplot(value~paste(weekday,"-",time,sep=""),data=x,plot=FALSE)
     
-    weekdays <- c(rep("1-Monday",12),
+    weekdays <- c( rep("1-Monday",12),
                    rep("2-Tuesday",12),
                    rep("3-Wednesday",12),
                    rep("4-Thursday",12),
@@ -57,9 +57,9 @@ box_plot_data_ts <- function(x,xtyp="days"){
                    rep("7-Sunday",12))
     
     time <- (paste(c(0:23),':',rep('00',23),':',rep('00',23),sep=''))
-    time <- c(rep(time,7)) ;time <- as.POSIXct(time,format="%H:%M:%S")
+    time <- c(rep(time,7)) ;time <- as.POSIXct(time,format="%H:%M:%S", tz = "Europe/London")
     
-    x<-data.frame(weekdays=weekdays,time=time,stats=t(x$stats),n=x$n)}
+    x <- data.frame(weekdays=weekdays,time=time,stats=t(x$stats),n=x$n)}
   
   return(x)
 } 
