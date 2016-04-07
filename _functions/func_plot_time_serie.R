@@ -18,7 +18,7 @@ plot_time_serie<-function(x,xtyp="days"){
     geom_point(colour="red",size=3)+
     scale_x_datetime(breaks = date_breaks("2 hour"),
                      minor_breaks = date_breaks("1 hour"),
-                     labels = date_format("%H:%M"))}
+                     labels = date_format("%H:%M", tz = "Europe/London"))}
   
   if(xtyp=="mins"){graf<-graf+
     geom_errorbar(colour="gray",size=0.5,aes(ymin=min,ymax=max))+
@@ -26,7 +26,7 @@ plot_time_serie<-function(x,xtyp="days"){
     geom_point(colour="red",size=1.5)+
     scale_x_datetime(breaks = date_breaks("2 hour"),
                      minor_breaks = date_breaks("1 hour"),
-                     labels = date_format("%H:%M"))}
+                     labels = date_format("%H:%M", tz = "Europe/London"))}
   graf
 }
 
